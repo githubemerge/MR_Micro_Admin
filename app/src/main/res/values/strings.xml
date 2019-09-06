@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MR Micro-Admin</string>
+    <string name="title_activity_maps">MR Micro-Admin</string>
+    <string name="assign">ASSIGN</string>
+    <string name="todo">TODO</string>
+</resources>

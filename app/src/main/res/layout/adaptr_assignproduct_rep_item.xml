@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="5dp"
+    android:text="TextView"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="14sp" />

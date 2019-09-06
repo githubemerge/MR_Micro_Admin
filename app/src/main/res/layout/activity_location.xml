@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark">
+
+
+            <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="LOCATIONS"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_navigation_menu" />
+
+            <ImageView
+                android:id="@+id/imageView_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_filter" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativelayout_bottom_menu_bar"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/relativelayout_title_bar">
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_options"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_approved"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/divider"
+                    android:layout_toRightOf="@+id/divider"
+                    android:background="@drawable/bg_right_white">
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/textview_approved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Approved"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/divider"
+                    android:layout_toLeftOf="@+id/divider"
+                    android:background="@drawable/bg_left_primary">
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/textview_pending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Pending"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="?android:attr/listDivider" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_background">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_locations"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite" />
+
+                <include android:id="@+id/include_progres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    layout="@layout/commen_progress"/>
+
+                <include android:id="@+id/include_nointernt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    layout="@layout/commen_nointernet"/>
+
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/relativelayout_bottom_menu_bar"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottom_navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                app:itemBackground="@color/colorPrimaryDark"
+                app:itemIconTint="@android:color/white"
+                app:itemTextColor="@android:color/white"
+                app:menu="@menu/bottom_navigation" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_gravity="start"
+        android:layout_marginTop="65dp"
+        android:background="@color/colorWhite">
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+            android:id="@+id/textview_vertion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Admin 1.0.0" />
+
+        <ListView
+            android:id="@+id/listview_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_above="@+id/textview_vertion"
+            android:layout_below="@+id/textview_user"
+            android:layout_marginTop="10dp" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/img_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_profile_users"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#be8d3f"
+            app:civ_shadow_radius="10" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+            android:id="@+id/textview_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

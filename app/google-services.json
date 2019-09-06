@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "483235964195",
+    "firebase_url": "https://micro-health.firebaseio.com",
+    "project_id": "micro-health",
+    "storage_bucket": "micro-health.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483235964195:android:196b1303d70ebf08",
+        "android_client_info": {
+          "package_name": "emerge.project.mrsolution_admin_micro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483235964195-hdftuok0rriudditip9sldb6p1p9esu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7qa12dLItaSHR3fvaT5pKo2KOynQtD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483235964195-hdftuok0rriudditip9sldb6p1p9esu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

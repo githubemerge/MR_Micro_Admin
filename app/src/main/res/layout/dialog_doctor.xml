@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayoutdailogmain"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dialog_background">
+
+
+
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_qualification"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_qualification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_rep"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+            android:id="@+id/textview_rep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_contactnumber"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_contactnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_regnumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_regnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_spec"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+            android:id="@+id/textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_doctor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/img_doctor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_doctor"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="1dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#be8d3f"
+            app:civ_shadow_radius="1" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_header_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:elevation="5dp">
+
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratRegular
+            android:id="@+id/textview_principale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_productname"
+            android:layout_alignStart="@+id/textview_productname"
+            android:layout_alignLeft="@+id/textview_productname"
+            android:layout_marginRight="10dp"
+            android:text="Prinsipale"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="#ffffff">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/img_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_wellman"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#be8d3f"
+                app:civ_shadow_radius="1" />
+
+
+        </RelativeLayout>
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+            android:id="@+id/textview_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/relativelayout_image"
+            android:layout_toRightOf="@+id/relativelayout_image"
+            android:text="Wellteen"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

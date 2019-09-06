@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/CardViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerVertical="true"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_header_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:padding="3dp">
+
+
+        <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+            android:id="@+id/textview_principle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayout_image"
+            android:text="Microlabs"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

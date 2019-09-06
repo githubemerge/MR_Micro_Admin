@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayoutdailogmain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_background">
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="visible" />
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mapView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/montserratLight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_edittext_background"
+                        android:text="Location Name"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/textview_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/montserratLight1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/montserratLight2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_edittext_background"
+                        android:text="Address"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/textview_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/montserratLight2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/montserratLight3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview_address"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_edittext_background"
+                        android:text="Area"
+                        android:textColor="@color/colorPrimary" />
+
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/textview_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/montserratLight3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/montserratLight4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview_area"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_edittext_background"
+                        android:text="Town"
+                        android:textColor="@color/colorPrimary" />
+
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/textview_town"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/montserratLight4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratLight
+                        android:id="@+id/montserratLight5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview_town"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_edittext_background"
+                        android:text="District"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <emerge.project.mrsolution_admin_micro.ui.fonts.MontserratMedium
+                        android:id="@+id/textview_district"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/montserratLight5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
