@@ -46,7 +46,6 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             shrinkResources true
-           // buildConfigField "String", "API_BASE_URL", '\"http://microhealthcaremr.emerge.lk:8082/MedicalRep_DCR_MICRO_DEV/api/\"'
             buildConfigField "String", "API_BASE_URL", '\"http://220.247.244.22:8082/MR_DCR_DEMO/api/\"'
             buildConfigField "String", "API_TOKEN_ID", '\"5050\"'
 
